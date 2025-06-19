@@ -1,11 +1,10 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     html,
     body {
-        max-width: 768px;
+        max-width: 1024px;
         width: 100%;
-        margin: 0;
-        overflow: auto;
+        margin: 0 auto;
     }
 
     .header {
@@ -20,7 +19,7 @@
     }
 
     .available-on {
-        margin-left: 65px;
+        margin-left: 365px;
     }
 
     .about-container {
@@ -29,7 +28,7 @@
     }
 
     .about-text {
-        margin-right: 30px;
+        margin-right: 300px;
     }
 
     .about-intro {
@@ -80,11 +79,11 @@
     }
 
     .win-text {
-        width: 745px;
+        width: 460px;
     }
 
     .play-win {
-        width: 745px;
+        width: 460px;
         padding-right: 100px;
     }
 
@@ -124,9 +123,7 @@
 
     .footer-container {
         display: flex;
-        flex-direction: column;
         justify-content: space-between;
-        height: 150px;
     }
 
     .footer-logos {
@@ -141,13 +138,10 @@
     }
 }
 
-/* @media (max-width: 768px) {} */
-
-/* @media (min-width: 320px) {
+@media (max-width: 320px) {
     body {
-        min-width: 320px;
+        max-width: 320px;
         margin: 0 auto;
-        overflow: auto;
     }
 
     .header {
@@ -345,4 +339,4 @@
     .bottom {
         margin-top: 300px;
     }
-} */
+}
