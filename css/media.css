@@ -1,8 +1,8 @@
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
     html,
     body {
-        min-width: 768px;
+        max-width: 1024px;
         width: 100%;
         margin: 0;
         overflow: auto;
@@ -139,10 +139,13 @@
     }
 }
 
-@media (max-width: 320px) {
+/* @media (max-width: 768px) {} */
+
+@media (min-width: 320px) {
     body {
-        max-width: 320px;
+        min-width: 320px;
         margin: 0 auto;
+        overflow: auto;
     }
 
     .header {
