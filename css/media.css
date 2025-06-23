@@ -203,7 +203,7 @@
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 460px) {
 
     html,
     body {
@@ -214,11 +214,16 @@
     }
 
     .header {
-        width: 600px;
+        width: 460px;
         background-image: url(../img/11.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
+    }
+
+    .header-container {
+        display: flex;
+        align-items: center;
     }
 
     .available-on {
