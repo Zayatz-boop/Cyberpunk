@@ -149,6 +149,10 @@
         overflow: auto;
     }
 
+    .header-container {
+        flex-direction: column;
+    }
+
     .available-on {
         margin-left: 80px;
     }
@@ -195,6 +199,96 @@
 
     .footer-logos {
         margin: 0;
+    }
+
+}
+
+@media (max-width: 460px) {
+
+    html,
+    body {
+
+        width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+    }
+
+    .header {
+        width: 460px;
+        background-image: url(../img/11.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .available-on {
+        margin-left: 18px;
+        width: 424px;
+        height: 390px;
+    }
+
+    .about-container {
+        margin-top: 50px;
+    }
+
+    .about-text {
+        margin: 0;
+    }
+
+    .intro {
+        width: 390px;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .win {
+        margin-top: -10px;
+    }
+
+    .right-img {
+        height: 200px;
+    }
+
+    .win-text {
+        width: 390px;
+    }
+
+    .btn-outline {
+        width: 390px;
+    }
+
+    .hp {
+        margin-top: -10px;
+    }
+
+    .hp-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 390px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .hp-logo {
+        margin: 0;
+    }
+
+    .hp-images {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 400px;
+        width: 250px;
+    }
+
+    .hp-text {
+        padding: 0 100px;
+    }
+
+    .footer-logos {
+        display: flex;
+        flex-direction: column;
     }
 
 }

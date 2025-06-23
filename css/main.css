@@ -43,7 +43,6 @@ span {
 }
 
 .header {
-    height: 1000px;
     background-image: url(../img/bg.jpg);
     background-position: center;
     background-size: cover;
@@ -66,6 +65,7 @@ span {
 
 .available-on {
     background-image: url(../img/Rectangle\ 59.png);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     gap: 30px;
