@@ -203,7 +203,7 @@
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
 
     html,
     body {
@@ -214,7 +214,7 @@
     }
 
     .header {
-        width: 500px;
+        width: 600px;
         background-image: url(../img/11.jpg);
         background-position: center;
         background-size: cover;
