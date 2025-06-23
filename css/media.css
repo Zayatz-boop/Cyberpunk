@@ -5,6 +5,7 @@
         max-width: 1024px;
         width: 100%;
         margin: 0 auto;
+        overflow: auto;
     }
 
     .header {
@@ -139,6 +140,14 @@
 }
 
 @media (max-width: 768px) {
+
+    html,
+    body {
+        max-width: 768px;
+        width: 100%;
+        margin: 0 auto;
+        overflow: auto;
+    }
 
     .available-on {
         margin-left: 80px;
