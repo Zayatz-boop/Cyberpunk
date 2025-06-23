@@ -138,6 +138,58 @@
     }
 }
 
+@media (max-width: 768px) {
+
+    .available-on {
+        margin-left: 80px;
+    }
+
+    .about-intro {
+        margin-right: 0px;
+    }
+
+    .intro {
+        padding-right: 100px;
+    }
+
+    .buy {
+        margin-top: 0px;
+    }
+
+    .platforms {
+        padding-top: 20px;
+    }
+
+    .buy-container {
+        gap: 10px;
+    }
+
+    .buy-text {
+        padding-top: 20px;
+    }
+
+    .left-imgs {
+        justify-content: center;
+    }
+
+    .footer-container {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        height: 150px;
+    }
+
+    .footer-license {
+        margin: 0;
+        margin-bottom: 0px;
+    }
+
+    .footer-logos {
+        margin: 0;
+    }
+
+}
+
 @media (max-width: 320px) {
     body {
         max-width: 320px;
