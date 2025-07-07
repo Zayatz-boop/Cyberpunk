@@ -1,502 +1,202 @@
-@media (max-width: 1024px) {
+@media (max-width: 460px) {
 
     html,
     body {
-        max-width: 1024px;
         width: 100%;
-        margin: 0 auto;
-        overflow: auto;
+        overflow-x: hidden;
     }
 
     .header {
-        background-image: url(../img/11.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+        position: fixed;
+        z-index: 1000;
+        width: auto;
     }
 
     .header-container {
-        margin: 0 36px;
-    }
-
-    .available-on {
-        margin-left: 365px;
-    }
-
-    .about-container {
-        margin: 70px 36px;
-        padding: 0;
-    }
-
-    .about-text {
-        margin-right: 300px;
-    }
-
-    .about-intro {
-        margin-right: 200px;
-    }
-
-    .intro {
-        width: 788px;
-    }
-
-    .buy-img {
-        width: 332px;
-    }
-
-    .about-img {
-        display: flex;
+        width: auto;
+        position: relative;
         flex-direction: column;
-        gap: 32px;
-    }
-
-    .left-imgs {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .right-img {
-        background-image: url(../img/Rectangle\ 61\ 1.png);
-        width: 952px;
-        height: 424px;
-    }
-
-    .win {
-        padding: 0 36px;
-        padding-bottom: 50px;
-    }
-
-    .win-header {
-        padding-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 20px;
-    }
-
-    .win-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .win-text {
-        width: 460px;
-    }
-
-    .play-win {
-        width: 460px;
-        padding-right: 100px;
-    }
-
-    .consoles {
-        margin-top: -432px;
-    }
-
-    .win-form-left {
-        margin-top: 60px;
-    }
-
-    .hp {
-        padding: 70px 36px;
-        padding-bottom: 150px;
-    }
-
-    .hp-text {
-        margin-top: -30px;
-    }
-
-    .hp-logo {
-        margin-top: 10px;
-        margin-left: 70px;
-    }
-
-    .hp-text:last-child {
-        margin-bottom: 0;
-    }
-
-    .immerse {
-        margin-right: 100px;
-    }
-
-    .more {
-        height: 59px;
-    }
-
-    .footer-container {
-        display: flex;
         justify-content: space-between;
+        background-color: #E1EDE6;
     }
 
-    .footer-logos {
-        margin-left: 40px;
-    }
-
-    .footer-license {
-        display: flex;
-        align-items: center;
-        gap: 30px;
-        margin-right: 40px;
-    }
-}
-
-@media (max-width: 768px) {
-
-    html,
-    body {
-        max-width: 768px;
-        width: 100%;
-        margin: 0 auto;
-        overflow: auto;
-    }
-
-    .header-container {
-        flex-direction: column;
-    }
-
-    .available-on {
-        margin-left: 80px;
-    }
-
-    .about-intro {
-        margin-right: 0px;
-    }
-
-    .intro {
-        padding-right: 100px;
-    }
-
-    .buy {
-        margin-top: 0px;
-    }
-
-    .platforms {
-        padding-top: 20px;
-    }
-
-    .buy-container {
-        gap: 10px;
-    }
-
-    .buy-text {
-        padding-top: 20px;
-    }
-
-    .left-imgs {
-        justify-content: center;
-    }
-
-    .footer-container {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        height: 150px;
-    }
-
-    .footer-license {
-        margin: 0;
-        margin-bottom: 0px;
-    }
-
-    .footer-logos {
-        margin: 0;
-    }
-
-}
-
-@media (max-width: 767px) {
-
-    html,
-    body {
-        width: 100%;
-        margin: 0 auto;
-        overflow-x: hidden;
+    .logo {
         position: absolute;
     }
 
-    .header {
-        width: 767px;
-        background-image: url(../img/11.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .header-container {
-        display: flex;
+    .header-nav {
+        padding: 0px 50px;
+        gap: 20px;
         align-items: center;
     }
 
-    .available-on {
-        margin-left: 18px;
-        width: 424px;
-        height: 390px;
+    .nav-item {
+        visibility: hidden;
     }
 
-    .about-container {
-        margin-top: 50px;
-    }
-
-    .about-text {
-        margin: 0;
-    }
-
-    .intro {
-        width: 390px;
+    .burger-menu {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 30px;
+        background: transparent;
+        border: none;
+        cursor: pointer;
         padding: 0;
-        padding-top: 20px;
+        z-index: 100;
+        gap: 6px;
     }
 
-    .win {
-        margin-top: -10px;
+    .burger-line {
+        width: 30px;
+        height: 3px;
+        background: #4C5866;
+        border-radius: 5px;
+        transition: all 0.3s ease;
     }
 
-    .right-img {
-        height: 200px;
+    .main-img {
+        visibility: hidden;
+        position: absolute;
     }
 
-    .win-text {
-        width: 390px;
-    }
-
-    .btn-outline {
-        width: 390px;
-    }
-
-    .hp {
-        margin-top: -10px;
-    }
-
-    .hp-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 390px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .hp-logo {
-        margin: 0;
-    }
-
-    .hp-images {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 400px;
-        width: 250px;
-    }
-
-    .hp-text {
-        padding: 0 100px;
-    }
-
-    .footer-logos {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
-@media (max-width: 320px) {
-    body {
-        max-width: 320px;
-        margin: 0 auto;
-    }
-
-    .header {
-        background-image: url(../img/11-1.jpg);
-        background-position: top;
-        background-repeat: no-repeat;
-        height: 713px;
-    }
-
-    .header-container {
-        margin: 0 15px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .available-on {
-        background-image: url(../img/Rectangle\ 59-1.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 320px;
-        height: 207px;
-        margin-top: 445px;
-        margin-left: 0;
-        padding: 10px;
-        padding-left: 40px;
-        gap: 30px;
-    }
-
-    .btn {
-        font-size: 20px;
-        width: 244px;
-        height: 60px;
+    .main {
+        margin: 100px 15px 0px 15px;
     }
 
     h1 {
         font-size: 30px;
-        line-height: 40px;
-    }
-
-    .about {
-        margin-left: -25px;
-    }
-
-    .about-container {
-        margin-top: 100px;
-    }
-
-    .about-intro {
-        margin-right: 0px;
-    }
-
-    .about-text {
-        margin: 0;
-        width: 296px;
+        line-height: 100%;
+        padding-top: 60px;
     }
 
     .intro {
-        width: 296px;
-        line-height: 32px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        font-size: 14px;
+        line-height: 150%;
     }
 
-    .about-img {
-        margin-top: -50px;
-        margin-left: -20px;
-        margin-right: -40px;
+    .button-outline {
+        font-size: 18px;
+        padding: 15px 30px;
     }
 
-    .left-imgs {
-        margin-top: 30px;
-        gap: 60px;
+    .reproductions {
+        width: auto;
     }
 
-    .right-img {
-        background-image: url(../img/Rectangle\ 61\ 2.png);
-        object-fit: contain;
-        width: 320px;
-        height: 424px;
-        margin-top: 30px;
+    .reproductions-header {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
     }
 
-    .win {
-        width: 320px;
-        padding-top: 0;
-        padding: 0 12px;
+    .reproductions-title {
+        font-size: 24px;
+        text-align: center;
     }
 
-    .win-header {
-        background-image: url(../img/3.png);
-        background-repeat: no-repeat;
-        margin-top: 100px;
-    }
-
-    .action {
-        margin-top: -90px;
-        height: 62px;
-        width: 62px;
-    }
-
-    .win-img {
-        margin-top: 10px;
-    }
-
-    .win-text {
-        width: 296px;
-    }
-
-    .win-form-left {
-        width: 296px;
-    }
-
-    .btn-outline {
-        width: 296px;
-    }
-
-    .play-win {
-        margin-top: 110px;
-        font-size: 30px;
-    }
-
-    .hp {
-        margin-top: -10px;
-    }
-
-    .hp-container {
+    .countries {
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 32px;
     }
 
-    .hp-logo {
-        margin-left: 10px;
+    .items {
+        padding-top: 28px;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        margin-bottom: 60px;
     }
 
-    .hp-images {
-        width: 296px;
-        height: 1040px;
+    .item {
+        width: auto;
+        padding-left: 20px;
     }
 
-    .hp-text {
-        width: 296px;
-        margin-top: -780px;
+    .promo {
+        width: auto;
+        position: relative;
     }
 
-    .immerse {
-        margin: 0;
+    .promo-content {
+        width: auto;
+        padding: 50px 15px;
     }
 
-    .desc {
-        line-height: 30px;
+    h3 {
+        font-size: 24px;
     }
 
-    .buy {
-        margin-top: -20px;
+    .promo-text-1,
+    .promo-text-2 {
+        width: auto;
+        font-size: 16px;
+        line-height: 140%;
     }
 
-    .buy-disc {
-        font-size: 30px;
+    .watch {
+        font-size: 18px;
+        padding: 15px 84px;
+        margin-top: 30px;
     }
 
-    .buy-desc {
-        margin: 70px 12px;
-        margin-top: -70px;
+    .team {
+        width: auto;
+        padding: 0;
     }
 
-    .buy-container {
+    .team-container {
         display: flex;
         flex-direction: column;
+        margin-top: 60px;
+        width: auto;
+    }
+
+    .team-desc {
+        padding-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+
+    .team-imgs {
+        margin-bottom: 94px;
+        justify-content: space-around;
+    }
+
+    .img-team {
+        width: 235px;
+        margin-left: 35px;
     }
 
     .footer-container {
-        width: 320px;
+        padding-top: 23px;
+        padding-bottom: 23px;
+        padding-left: 20px;
+        width: auto;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
     }
 
-    .footer-logos {
+    .footer-items {
         display: flex;
-        flex-direction: column;
-        margin-left: 0;
-        padding: 60px;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
-    .footer-license {
-        width: 323px;
-        margin-left: 40px;
-        background-color: #E5E5E5;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px;
-    }
-
-    .bottom {
-        margin-top: 300px;
+    .socials {
+        padding-top: 20px;
+        border-top: 1px solid #000;
+        align-items: center;
     }
 }
