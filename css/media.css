@@ -100,7 +100,6 @@
 
     .hp {
         padding: 70px 36px;
-        padding-bottom: 150px;
     }
 
     .hp-text {
@@ -147,7 +146,7 @@
         max-width: 768px;
         width: 100%;
         margin: 0 auto;
-        overflow: auto;
+        overflow-x: hidden;
     }
 
     .header-container {
@@ -160,6 +159,7 @@
     }
 
     .available-on {
+        width: auto;
         padding-left: 20px;
     }
 
@@ -203,6 +203,10 @@
 
     .buy-container {
         flex-direction: column;
+    }
+
+    .buy-desc {
+        padding: 20px;
     }
 
     .platforms {

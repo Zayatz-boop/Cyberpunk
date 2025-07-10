@@ -241,7 +241,6 @@ span {
 
 .hp-text {
     width: auto;
-    height: 526px;
     display: flex;
     flex-direction: column;
     gap: 25px;
