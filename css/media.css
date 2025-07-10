@@ -20,16 +20,14 @@
     }
 
     .available-on {
-        margin-left: 365px;
+        /* margin-left: 365px; */
+        margin: auto;
+        margin-top: 500px;
     }
 
     .about-container {
         margin: 70px 36px;
         padding: 0;
-    }
-
-    .about-text {
-        margin-right: 300px;
     }
 
     .about-intro {
@@ -96,6 +94,10 @@
         margin-top: 60px;
     }
 
+    .hp-container {
+        flex-direction: column;
+    }
+
     .hp {
         padding: 70px 36px;
         padding-bottom: 150px;
@@ -107,7 +109,6 @@
 
     .hp-logo {
         margin-top: 10px;
-        margin-left: 70px;
     }
 
     .hp-text:last-child {
@@ -151,10 +152,19 @@
 
     .header-container {
         flex-direction: column;
+        gap: 30px;
+    }
+
+    .header {
+        position: relative;
     }
 
     .available-on {
-        margin-left: 80px;
+        padding-left: 20px;
+    }
+
+    .about-container {
+        margin-left: 20px;
     }
 
     .about-intro {
@@ -162,11 +172,37 @@
     }
 
     .intro {
-        padding-right: 100px;
+        width: auto;
+    }
+
+    .right-img {
+        height: auto;
+    }
+
+    .win {
+        width: auto;
+        padding-left: 10px;
+        padding-right: 20px;
+    }
+
+    .win-text {
+        width: auto;
+    }
+
+    .hp-images {
+        width: auto;
+    }
+
+    .btn-outline {
+        width: auto;
     }
 
     .buy {
         margin-top: 0px;
+    }
+
+    .buy-container {
+        flex-direction: column;
     }
 
     .platforms {
@@ -198,106 +234,14 @@
     }
 
     .footer-logos {
+        width: 50%;
         margin: 0;
+        margin-right: 180px;
+        gap: 5px;
+        width: auto;
     }
-
 }
 
-@media (max-width: 767px) {
-
-    html,
-    body {
-        width: auto;
-        margin: 0 auto;
-        overflow-x: hidden;
-        /* position: absolute; */
-    }
-
-    .header {
-        width: auto;
-        background-image: url(../img/11.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .header-container {
-        position: relative;
-        display: flex;
-        align-items: center;
-    }
-
-    .available-on {
-        margin-left: 18px;
-        width: 424px;
-        height: 390px;
-    }
-
-    .about-container {
-        margin-top: 50px;
-    }
-
-    .about-text {
-        margin: 0;
-    }
-
-    .intro {
-        width: 390px;
-        padding: 0;
-        padding-top: 20px;
-    }
-
-    .win {
-        margin-top: -10px;
-    }
-
-    .right-img {
-        height: 200px;
-    }
-
-    .win-text {
-        width: 390px;
-    }
-
-    .btn-outline {
-        width: 390px;
-    }
-
-    .hp {
-        margin-top: -10px;
-    }
-
-    .hp-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 390px;
-        margin: 0;
-        padding: 0;
-    }
-
-    .hp-logo {
-        margin: 0;
-    }
-
-    .hp-images {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 400px;
-        width: 250px;
-    }
-
-    .hp-text {
-        padding: 0 100px;
-    }
-
-    .footer-logos {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
 
 @media (max-width: 320px) {
     body {

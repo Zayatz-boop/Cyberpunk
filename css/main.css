@@ -5,6 +5,8 @@ html,
 body {
     max-width: 1920px;
     margin: 0 auto;
+    height: auto;
+    scroll-behavior: smooth;
     overflow: auto;
 }
 
@@ -13,6 +15,9 @@ body {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    overflow-y: auto;
+    position: relative;
+    -webkit-overflow-scrolling: touch;
 }
 
 h1 {
@@ -73,7 +78,8 @@ span {
     padding-top: 70px;
     width: 624px;
     height: 369px;
-    margin-left: 976px;
+    margin: auto;
+    /* margin-left: 976px; */
     margin-top: 537px;
 }
 
@@ -94,13 +100,13 @@ span {
 .about-container {
     display: flex;
     flex-direction: column;
-    max-width: 1280px;
     margin: 0 auto;
     padding-top: 70px;
     padding-bottom: 85px;
 }
 
 .intro {
+    margin: 0 auto;
     width: 952px;
     padding-top: 28px;
     padding-bottom: 59px;
@@ -109,9 +115,14 @@ span {
 }
 
 .about-img {
+    margin: 0 auto;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+}
+
+.about-text {
+    margin: 0 auto;
 }
 
 .left-imgs {
@@ -216,15 +227,20 @@ span {
 }
 
 .hp-images {
-    width: 624px;
+    margin: 0 auto;
+    width: 50%;
     height: 536px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+.hp-logo {
+    margin: 0 auto;
+}
+
 .hp-text {
-    width: 624px;
+    width: auto;
     height: 526px;
     display: flex;
     flex-direction: column;
